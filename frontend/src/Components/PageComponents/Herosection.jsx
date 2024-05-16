@@ -35,8 +35,6 @@ export default function Herosection() {
             <ServicesIcon title="Appliance Repair/Ac" image={ac} link="/" />
             <ServicesIcon title="Disel Generators" image={generator} link="/" />
             <ServicesIcon title="Earthing Services" image={earth} link="/" />
-            <ServicesIcon title="Inverter" image={inverter} link="/" />
-            <ServicesIcon title="All services" image={explore} link="/" />
           </div>
         </div>
       </div>

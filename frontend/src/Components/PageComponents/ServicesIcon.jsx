@@ -8,11 +8,21 @@ export default function ServicesIcon({ image, title, link }) {
     >
       <div>
         <Link>
-          <img src={image} alt="Icon" className="rounded-lg h-20" />
+          <img
+            src={image}
+            alt="Icon"
+            className="rounded-lg h-20 transition ease-in-out delay-150 hover:-translate-y-1 
+            hover:scale-110 duration-100 ... cursor-pointer"
+          />
         </Link>
       </div>
       <div className="max-w-20">
-        <span className="font-poppins text-gray-700">{title}</span>
+        <span className="font-poppins text-slate-700 leading-tight">
+          <Link className="transition-all hover:text-slate-950 hover:underline relative leading-5">
+            {" "}
+            {title}
+          </Link>
+        </span>
       </div>
     </div>
   );
