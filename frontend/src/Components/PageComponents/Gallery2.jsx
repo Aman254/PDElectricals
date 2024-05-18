@@ -3,8 +3,9 @@ import imag1 from "../../Assets/Images/panel1.jpeg";
 import imag2 from "../../Assets/Images/panel2.jpeg";
 import imag3 from "../../Assets/Images/panel3.jpeg";
 import imag4 from "../../Assets/Images/generator5.jpeg";
-import imag5 from "../../Assets/Images/washingrepair.jpeg";
+import image5 from "../../Assets/Images/chimneyRepair.jpg";
 import imag6 from "../../Assets/Images/earthingchemical1.jpeg";
+
 export default function Gallery2() {
   return (
     <div>
@@ -55,7 +56,7 @@ export default function Gallery2() {
                 <img
                   alt="gallery"
                   className="w-full object-cover h-full object-center block"
-                  src={imag5}
+                  src={image5}
                 />
               </div>
               <div className="md:p-2 p-1 w-1/2">
