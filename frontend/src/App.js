@@ -9,21 +9,12 @@ import Register from "./Pages/register";
 import Contact from "./Pages/Contact";
 import Account from "./Pages/Account";
 import Footer from "./Components/Global/Footer";
-import { useDispatch } from "react-redux";
-import { logout } from "./features/userSlice";
 
 export default function App() {
-  const dispatch = useDispatch();
   return (
     <div>
       <Navbar />
-      <button
-        onClick={() => {
-          dispatch(logout());
-        }}
-      >
-        Logout
-      </button>
+
       <div>
         <Routes>
           <Route path="/" element={<Homepage />} />

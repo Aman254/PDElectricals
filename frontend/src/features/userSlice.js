@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   status: "",
   error: "",
-  user: { id: "", name: "Aman", email: "", token: "", status: "" },
+  user: { id: "", name: "", email: "", token: "", status: "" },
 };
 
 export const userSlice = createSlice({
