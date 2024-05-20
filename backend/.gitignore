@@ -22,3 +22,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+src/models/technicianModel.js
+src/Data/Technicians/technicians.json
+src/routes/admin.route.js
+src/controllers/admin.controller.js

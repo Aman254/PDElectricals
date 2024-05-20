@@ -324,5 +324,141 @@
       ]
     }
   ],
-  "AC": [{}]
+  "AC": [
+    {
+      "name": "Split AC Service",
+      "price": "649/- INR",
+      "image": "",
+      "description": [
+        "3 Meter Height Copper Earth Electrode",
+        "With Chemical Sac and Installation"
+      ],
+      "included": [
+        "Complete Installation of the Electrode",
+        "Warranty of 50 years",
+        "Minor wiring up to 2m, if needed (wire at extra cost)",
+        "10ft Bore Digging of 6 to 10inch"
+      ],
+      "excluded": [
+        "Connection and Wiring",
+        "Provide Water for Poring in the Pit at the Location"
+      ]
+    },
+    {
+      "name": "Window AC Service",
+      "price": "549/- INR",
+      "image": "",
+      "description": [
+        "Complete AC Wash and chekup",
+        "Deep Cleaning of Outdoor Unit"
+      ]
+    },
+    {
+      "name": "Split AC Service",
+      "price": "649/- INR",
+      "image": "",
+      "description": [
+        "Complete AC Wash and chekup",
+        "Just provide A Ladder, 2 buckets , A plug point"
+      ]
+    },
+    {
+      "name": "Repair",
+      "price": "299/- INR",
+      "image": "",
+      "description": [
+        "Detailed issue diagnosis with same day resolution if possible.",
+        "Visit Charges of 299 INR will be adjusted in the final bill."
+      ],
+      "included": [
+        "Accurate inspection of followed by repair quotation",
+        "Adjustment of inspection fee (INR 599) in invoice",
+        "AC  repair using high-quality spare parts & tools",
+        "Final check and cleanup"
+      ]
+    },
+    {
+      "name": "Gas Leak fix and Repair",
+      "price": "2500/- INR",
+      "image": "",
+      "description": [
+        "Through diagnosis, leak identification & fixing gas.",
+        "Refill to avoid Leakages."
+      ],
+      "included": [
+        "Accurate inspection of followed by repair quotation",
+        "Adjustment of inspection fee (INR 599) in invoice",
+        "AC  repair using high-quality spare parts & tools",
+        "Final check and cleanup"
+      ],
+      "Note": [
+        "For cooling coil damage in 3 or more areas, and extra INR 500 applies for complete leak repair",
+        "Ladder is not carried by technicians. Please arrange if AC is height"
+      ]
+    },
+    {
+      "name": "Split AC install",
+      "price": "2399/- INR",
+      "image": "",
+      "description": [
+        "Installation of indoor & outdoor with Free gas check.",
+        "Procurment of Spare parts at extra cost."
+      ],
+      "included": [
+        "Drilling, wiring connections, installtion of the units (indorr and outdoor) & pipe fixes",
+        "Gas check to prevent leakages",
+        "Cooling Rate and device check",
+        "Final check and cleanup"
+      ]
+    },
+    {
+      "name": "Window AC install",
+      "price": "1499/- INR",
+      "image": "",
+      "description": [
+        "Installation of indoor & outdoor with Free gas check.",
+        "Procurment of Spare parts at extra cost."
+      ],
+      "included": [
+        "Drilling, wiring connections, installtion of the units (indorr and outdoor) & pipe fixes",
+        "Gas check to prevent leakages",
+        "Cooling Rate and device check",
+        "Final check and cleanup"
+      ],
+      "excluded": [
+        "Unistalltion of existing AC",
+        "Spare parts (Extra charges may apply)",
+        "We do not carry ladder please arrange one before service"
+      ]
+    },
+    {
+      "name": "AC Uninstall Any",
+      "price": "1200/- INR",
+      "image": "",
+      "description": ["Uninstallation of both indoor and outdoor units."],
+      "included": [
+        "Uninstallation of indoor & outdoor units",
+        "Pipe Fix",
+        "AC packing",
+        "Clean-up after the service"
+      ]
+    }
+  ],
+  "Generator": [
+    {
+      "name": "Generator Service",
+      "price": "800/- INR",
+      "image": "",
+      "description": [
+        "Complete Generator Service and Checkup",
+        "Oil Leakage Checkups"
+      ],
+      "included": [
+        "Uninstallation of indoor & outdoor units",
+        "Pipe Fix",
+        "AC packing",
+        "Clean-up after the service"
+      ]
+    }
+  ]
 }

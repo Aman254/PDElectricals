@@ -1,0 +1,34 @@
+{
+  "technicians": [
+    {
+      "name": "Vivek Sharma",
+      "mobile": [8222018077],
+      "photo": "",
+      "work": ["AC", "Electrician", "DJ", "Earthing"]
+    },
+    {
+      "name": "Pradeep Diwedi",
+      "mobile": [8273066666],
+      "photo": "",
+      "work": ["Generator", "Electrician", "Earthing"]
+    },
+    {
+      "name": "Aman",
+      "mobile": [8869842222],
+      "photo": "",
+      "work": ["Technical", "Marketing"]
+    },
+    {
+      "name": "Shivam Sharma",
+      "mobile": [9058860013],
+      "photo": "",
+      "work": ["AC", "Electrician", "DJ", "Earthing"]
+    },
+    {
+      "name": "Sandeep Diwedi",
+      "mobile": [9457807222],
+      "photo": "",
+      "work": ["Electrician", "Pooja"]
+    }
+  ]
+}
