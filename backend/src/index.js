@@ -1,61 +1,18 @@
-import mongoose from "mongoose";
-import app from "./app.js";
-import logger from "./configs/logger.js";
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+const logger = require("./configs/logger.js");
+const app = require("./app.js");
 
-//env variables
-const { DATABASE_URL } = process.env;
-const PORT = process.env.PORT || 5000;
+dotenv.config({ path: "./.env" });
 
-//exit on mongodb Error
-mongoose.connection.on("error", (err) => {
-  logger.error(`Mongodb Connection Error:${err}`);
-  process.exit(1);
+const DB = process.env.DATABASE_URL;
+
+mongoose.connect(DB).then(() => {
+  logger.info("DB connected Sucessfully");
 });
 
-// Mongodb debug mode
-if (process.env.NODE_ENV !== "production") {
-  mongoose.set("debug", true);
-}
+const port = process.env.PORT || 5000;
 
-//mongodb connection
-mongoose
-  .connect(DATABASE_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    logger.info("Connected to Mongodb");
-  });
-
-let server;
-
-server = app.listen(PORT, () => {
-  logger.info(`Server is listening on ${PORT}`);
-  // console.log("Process id", process.pid);
-});
-
-const exithandler = (error) => {
-  if (server) {
-    logger.info("Server Clsed.");
-    process.exit(1);
-  } else {
-    process.exit(1);
-  }
-};
-
-//handle Server Errors
-const unexpectedErrorhandler = (error) => {
-  logger.error(error);
-  exithandler();
-};
-
-process.on("uncahughtException", unexpectedErrorhandler);
-process.on("unHandledRejection", unexpectedErrorhandler);
-
-//Sigterm
-process.on("SIGTERM", () => {
-  if (server) {
-    logger.info("Server Clsed.");
-    process.exit(1);
-  }
+app.listen(port, () => {
+  logger.info(`App Running on Port: ${port}`);
 });

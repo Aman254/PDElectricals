@@ -1,28 +1,25 @@
-import mongoose from "mongoose";
-const technicianSchema = mongoose.Schema(
-  {
-    name: {
-      type: String,
-      required: [true, "Please provide the Name"],
-    },
-    mobile: {
-      type: Number,
-      reuired: [true, "Please provide a valid Number"],
-      unique: [true, "This Mobile Number Already Exists"],
-    },
-    photo: {
-      type: String,
-      default: "",
-    },
-    work: {
-      type: [String],
-      reuired: [true, "Please provide the work of the Technician"],
-    },
+const mongoose = require(" mongoose");
+
+const technicianSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: [true, "Please provide your name."],
   },
-  {
-    timestamps: true,
-  }
-);
+  photo: [String],
+  mobile: {
+    type: Number,
+    required: [true, "Please provide your mobile number"],
+  },
+  work: {
+    type: String,
+    required: [true, "Please select the work category"],
+    enum: {
+      values: ["Generator", "Electrician", "Earthing", "AC"],
+    },
+    message:
+      "Please provide any of these, Generator, Electrician, Earthing, AC",
+  },
+});
 
 const Technician = mongoose.model("Technician", technicianSchema);
 

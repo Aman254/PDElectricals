@@ -1,4 +1,4 @@
-import winston from "winston";
+const winston = require("winston");
 
 const errorFromat = winston.format((info) => {
   if (info instanceof Error) {
@@ -24,4 +24,4 @@ const logger = winston.createLogger({
   ],
 });
 
-export default logger;
+module.exports = logger;
