@@ -1,8 +1,5 @@
-const fs = require("fs");
+const Service = require("../models/serviceModel");
 
-const services = JSON.parse(
-  fs.readFileSync(`${__dirname}/../Data/Alldata.json`)
-);
 exports.getAllServices = (req, res) => {
   res.status(200).json({
     status: "success",

@@ -9,7 +9,7 @@ const serviceSchema = new mongoose.Schema({
   },
   price: {
     type: Number,
-    required: [true, "Please provide peice for service"],
+    required: [true, "Please provide price for the service"],
   },
   category: {
     type: String,
@@ -20,18 +20,19 @@ const serviceSchema = new mongoose.Schema({
     },
   },
   description: {
-    type: [String, String],
+    type: [String],
     required: [true, "Please Provide the Description"],
   },
   included: {
-    type: [String, String, String, String],
+    type: [String],
   },
   excluded: {
-    type: [String, String, String, String],
+    type: [String],
   },
   image: [String],
-
-  note: String,
+  note: {
+    type: String,
+  },
 });
 
 const Service = mongoose.model("Service", serviceSchema);

@@ -1,15 +1,8 @@
-const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const logger = require("./configs/logger.js");
 const app = require("./app.js");
 
 dotenv.config({ path: "./.env" });
-
-const DB = process.env.DATABASE_URL;
-
-mongoose.connect(DB).then(() => {
-  logger.info("DB connected Sucessfully");
-});
 
 const port = process.env.PORT || 5000;
 
