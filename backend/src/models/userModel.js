@@ -5,12 +5,12 @@ const userSchema = mongoose.Schema(
   {
     name: {
       type: String,
-      required: [true, "Please provide a Name"],
+      required: [true, "Please provide your Name"],
       trim: true,
     },
     email: {
       type: String,
-      required: [true, "Please provide an Email"],
+      required: [true, "Please provide your Email"],
       unique: [true, "This Email Already Exists."],
       lowercase: true,
       validate: [validator.isEmail, "Please provide a valid email"],

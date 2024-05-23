@@ -28,37 +28,37 @@ export default function Galery1() {
           <ImageforGallery
             title="Dg Rentals"
             link="/"
-            description="A Dg rents service desc"
+            description="Reliable diesel generator rentals for uninterrupted power. Perfect for events and emergencies."
             image={generator4}
           />
           <ImageforGallery
-            title="Dg Rentals"
+            title="Dg Repair / Service"
             link="/"
-            description="A Dg rents service desc"
+            description="Expert generator repair and maintenance services. Keep your power running smoothly. Book now!"
             image={generator3}
           />
           <ImageforGallery
-            title="Dg Rentals"
+            title="New Generators"
             link="/"
-            description="A Dg rents service desc"
+            description="Consultation and sales for new generators of every brand. Get the perfect power solution. Book now!"
             image={generator1}
           />
           <ImageforGallery
-            title="Dg Rentals"
+            title="Copper Earthing"
             link="/"
-            description="A Dg rents service desc"
+            description="Reliable copper ground earthing services for safety and efficiency. Ensure optimal grounding. Book now!"
             image={earthing}
           />
           <ImageforGallery
-            title="Dg Rentals"
+            title="Power Panels"
             link="/"
-            description="A Dg rents service desc"
+            description="Panels: repair, maintenance, and new installations. Ensure reliable power management. Book now!"
             image={panel1}
           />
           <ImageforGallery
-            title="Dg Rentals"
+            title="GI Earthing"
             link="/"
-            description="A Dg rents service desc"
+            description="High-quality GI ground earthing services for enhanced safety and performance. Book now!"
             image={earthing2}
           />
         </div>

@@ -8,10 +8,22 @@ dotenv.config({ path: "./.env" });
 
 const DB = process.env.DATABASE_URL;
 
+//Exit on mongodb error
+mongoose.connection.on("error", (err) => {
+  logger.error(`Mongodb connection error; ${err}`);
+  process.exit(1);
+});
+
+//mongodb debug mode
+if (process.env.NODE_ENV !== "production") {
+  mongoose.set("debug", true);
+}
+
 mongoose
   .connect(DB, {})
   .then(() => logger.info("DB connection successful"))
   .catch((err) => logger.error("DB connection error:", err));
+
 // Read json file
 const services = JSON.parse(
   fs.readFileSync(`${__dirname}/Alldata.json`, "utf-8")

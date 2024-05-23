@@ -1,10 +1,11 @@
 const express = require("express");
-const userController = require("../controllers/userController");
+const trimRequest = require("trim-request");
+const authController = require("../controllers/authController");
 
 const router = express.Router();
 
-router.route("/register").post(userController.register);
-router.route("/login").post(userController.login);
-router.route("/logout").post(userController.logout);
+router.route("/register").post(trimRequest.all, authController.register);
+router.route("/login").post(trimRequest.all, authController.login);
+router.route("/logout").post(trimRequest.all, authController.logout);
 
 module.exports = router;
