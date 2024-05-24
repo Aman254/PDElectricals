@@ -1,8 +1,8 @@
-const mongoose = require("mongoose");
 const logger = require("../configs/logger");
 const createHttpError = require("http-errors");
 const validator = require("validator");
 const UserModel = require("../models/userModel");
+const bcrypt = require("bcrypt");
 
 exports.createUser = async (userData) => {
   const { name, email, password } = userData;
@@ -52,6 +52,21 @@ exports.createUser = async (userData) => {
     email,
     password,
   }).save();
+
+  return user;
+};
+
+exports.signUser = async (email, password) => {
+  const user = await UserModel.findOne({ email: email.toLowerCase() }).lean();
+
+  //check if user exists
+  if (!user) {
+    throw createHttpError.NotFound("Invalid Credentials.");
+  }
+  //compare passwords
+  let passwordMatches = await bcrypt.compare(password, user.password);
+
+  if (!passwordMatches) throw createHttpError.NotFound("Invalid Credentials");
 
   return user;
 };
