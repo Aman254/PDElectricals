@@ -8,12 +8,6 @@ dotenv.config({ path: "./.env" });
 
 const DB = process.env.DATABASE_URL;
 
-//Exit on mongodb error
-mongoose.connection.on("error", (err) => {
-  logger.error(`Mongodb connection error; ${err}`);
-  process.exit(1);
-});
-
 //mongodb debug mode
 if (process.env.NODE_ENV !== "production") {
   mongoose.set("debug", true);
