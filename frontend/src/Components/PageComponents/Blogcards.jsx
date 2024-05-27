@@ -17,8 +17,8 @@ export default function Blogcards({ title, description, link, image }) {
           <p className="leading-relaxed mb-3">{description}</p>
           <div className="flex items-center flex-wrap ">
             <Link
-              className="text-violet-500 inline-flex items-center md:mb-2 lg:mb-0"
-              to="/"
+              className="text-purple-500 inline-flex items-center md:mb-2 lg:mb-0"
+              to={link}
             >
               Learn More
               <svg

@@ -27,37 +27,37 @@ export default function Galery1() {
         <div className="flex flex-wrap -m-4">
           <ImageforGallery
             title="Dg Rentals"
-            link="/"
+            link="/services/generator"
             description="Reliable diesel generator rentals for uninterrupted power. Perfect for events and emergencies."
             image={generator4}
           />
           <ImageforGallery
             title="Dg Repair / Service"
-            link="/"
+            link="/services/generator"
             description="Expert generator repair and maintenance services. Keep your power running smoothly. Book now!"
             image={generator3}
           />
           <ImageforGallery
             title="New Generators"
-            link="/"
+            link="/services/generator"
             description="Consultation and sales for new generators of every brand. Get the perfect power solution. Book now!"
             image={generator1}
           />
           <ImageforGallery
             title="Copper Earthing"
-            link="/"
+            link="/services/earthing"
             description="Reliable copper ground earthing services for safety and efficiency. Ensure optimal grounding. Book now!"
             image={earthing}
           />
           <ImageforGallery
             title="Power Panels"
-            link="/"
+            link="/services/electric"
             description="Panels: repair, maintenance, and new installations. Ensure reliable power management. Book now!"
             image={panel1}
           />
           <ImageforGallery
             title="GI Earthing"
-            link="/"
+            link="/services/earthing"
             description="High-quality GI ground earthing services for enhanced safety and performance. Book now!"
             image={earthing2}
           />

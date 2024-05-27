@@ -1,6 +1,8 @@
+const createHttpError = require("http-errors");
 const logger = require("../configs/logger");
 const { createUser, signUser } = require("../services/auth.service");
-const { generateToken } = require("../services/token.service");
+const { generateToken, verifyToken } = require("../services/token.service");
+const { findUser } = require("../services/user.service");
 
 exports.register = async (req, res, next) => {
   try {
@@ -93,5 +95,28 @@ exports.logout = async (req, res, next) => {
 };
 
 exports.refreshToken = async (req, res, next) => {
-  res.send("Hello from Refresh");
+  try {
+    const refresh_token = req.cookies.refreshToken;
+    if (!refresh_token) throw createHttpError.Unauthorized("Please Login");
+    const check = await verifyToken(
+      refresh_token,
+      process.env.REFRESH_TOKEN_SECRET
+    );
+    const user = await findUser(check.userId);
+    const access_token = await generateToken(
+      { userId: user._id },
+      process.env.TOKEN_EXPIRE,
+      process.env.ACCESS_TOKEN_SECRET
+    );
+    res.json({
+      access_token,
+      user: {
+        _id: user._id,
+        name: user.name,
+        email: user.email,
+      },
+    });
+  } catch (error) {
+    next(error);
+  }
 };

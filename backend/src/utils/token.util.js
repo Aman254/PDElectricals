@@ -18,3 +18,16 @@ exports.sign = async (payload, expiresIn, secret) => {
     );
   });
 };
+
+exports.verify = async (token, secret) => {
+  return new Promise((resolve, reject) => {
+    jwt.verify(token, secret, (error, payload) => {
+      if (error) {
+        logger.error(error);
+        resolve(null);
+      } else {
+        resolve(payload);
+      }
+    });
+  });
+};

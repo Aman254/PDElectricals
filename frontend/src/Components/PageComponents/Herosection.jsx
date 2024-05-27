@@ -30,11 +30,23 @@ export default function Herosection() {
             <ServicesIcon
               title="Electrician Services"
               image={electrician}
-              link="/"
+              link="/services/electric"
             />
-            <ServicesIcon title="Appliance Repair/Ac" image={ac} link="/" />
-            <ServicesIcon title="Disel Generators" image={generator} link="/" />
-            <ServicesIcon title="Earthing Services" image={earth} link="/" />
+            <ServicesIcon
+              title="Appliance Repair/Ac"
+              image={ac}
+              link="/services/ac"
+            />
+            <ServicesIcon
+              title="Disel Generators"
+              image={generator}
+              link="/services/generator"
+            />
+            <ServicesIcon
+              title="Earthing Services"
+              image={earth}
+              link="/services/earthing"
+            />
           </div>
         </div>
       </div>

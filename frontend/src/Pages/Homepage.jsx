@@ -20,13 +20,19 @@ export default function Homepage() {
               title="Gyeser Repair"
               description=""
               image={gyeserRepair}
+              link="/services/electric"
             />
             <Blogcards
               title="Chimney Repair"
               description=""
               image={chimneyRepair}
+              link="/services/electric"
             />
-            <Blogcards title="AC Service" image={acService} />
+            <Blogcards
+              title="AC Service"
+              image={acService}
+              link="/services/ac"
+            />
           </div>
         </div>
       </section>

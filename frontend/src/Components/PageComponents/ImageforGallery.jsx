@@ -14,7 +14,7 @@ export default function ImageforGallery({ link, image, title, description }) {
         </Link>
         <div className="px-8 py-10 relative z-10 w-full border-4 border-violet-200 bg-white opacity-0 hover:opacity-100">
           <h2 className="tracking-widest text-sm title-font font-medium text-violet-500 hover:text-violet-400 mb-1">
-            <Link>Clcik Here to Explore</Link>
+            <Link to={link}>Clcik Here to Explore</Link>
           </h2>
           <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
             {title}

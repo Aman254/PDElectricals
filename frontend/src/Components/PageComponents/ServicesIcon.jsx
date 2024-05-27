@@ -7,7 +7,7 @@ export default function ServicesIcon({ image, title, link }) {
       key={title}
     >
       <div>
-        <Link>
+        <Link to={link}>
           <img
             src={image}
             alt="Icon"
@@ -18,7 +18,10 @@ export default function ServicesIcon({ image, title, link }) {
       </div>
       <div className="max-w-20">
         <span className="font-poppins text-slate-700 leading-tight">
-          <Link className="transition-all hover:text-slate-950 hover:underline relative leading-5">
+          <Link
+            className="transition-all hover:text-slate-950 hover:underline relative leading-5"
+            to={link}
+          >
             {" "}
             {title}
           </Link>
