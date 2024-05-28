@@ -29,6 +29,7 @@ export default function Registerform() {
             <AuthInput name="name" type="text" placeholder="Full Name" />
             {/* <AuthInput name="number" type="number" placeholder="Mobile" /> */}
             <AuthInput name="email" type="text" placeholder="Email Address" />
+            <AuthInput name="phone" type="text" placeholder="Mobile" required />
             <AuthInput name="password" type="password" placeholder="Password" />
 
             <button
