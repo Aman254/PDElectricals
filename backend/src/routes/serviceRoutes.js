@@ -3,6 +3,9 @@ const serviceController = require("../controllers/serviceController");
 
 const router = express.Router();
 
-router.route("/").get(serviceController.getAllServices);
+router
+  .route("/")
+  .get(serviceController.getAllServices)
+  .post(serviceController.createService);
 
 module.exports = router;
