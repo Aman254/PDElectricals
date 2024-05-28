@@ -33,11 +33,12 @@ exports.register = async (req, res, next) => {
 
     res.json({
       message: "Register Sucessful",
-      access_token,
+
       user: {
         _id: newUser._id,
         name: newUser.name,
         email: newUser.email,
+        access_token,
       },
     });
   } catch (error) {
@@ -71,11 +72,11 @@ exports.login = async (req, res, next) => {
 
     res.json({
       message: "Register Sucessful",
-      access_token,
       user: {
         _id: user._id,
         name: user.name,
         email: user.email,
+        access_token,
       },
     });
   } catch (error) {
@@ -109,11 +110,11 @@ exports.refreshToken = async (req, res, next) => {
       process.env.ACCESS_TOKEN_SECRET
     );
     res.json({
-      access_token,
       user: {
         _id: user._id,
         name: user.name,
         email: user.email,
+        access_token,
       },
     });
   } catch (error) {
