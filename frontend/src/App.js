@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 import Homepage from "./Pages/Homepage";
 import Login from "./Pages/login";
@@ -15,7 +15,8 @@ import Gridpricing from "./Components/Gridpricing";
 import { useSelector } from "react-redux";
 
 export default function App() {
-  const { user } = useSelector((state) => ({ ...state }));
+  const { user } = useSelector((state) => state.user);
+  const access_token = user?.access_token;
 
   return (
     <div>
@@ -27,7 +28,10 @@ export default function App() {
         <Route path="/services/earthing" element={<Earthingservice />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/contactus" element={<Contact />} />
+        <Route
+          path="/contactus"
+          element={access_token ? <Contact /> : <Navigate to="/login" />}
+        />
         <Route path="/account" element={<Account />} />
       </Routes>
     </div>
