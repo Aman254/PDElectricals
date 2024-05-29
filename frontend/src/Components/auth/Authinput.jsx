@@ -19,7 +19,9 @@ export default function Authinput({
           focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 
           transition-colors duration-200 ease-in-out shadow-md"
           placeholder={placeholder}
+          {...register(name)}
         />
+        {error && <p className="text-red-400">{error}</p>}
       </div>
     </div>
   );

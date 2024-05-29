@@ -12,8 +12,11 @@ import Generator from "./Pages/Generatorservice";
 import ACservice from "./Pages/ACservice";
 import Earthingservice from "./Pages/Earthingservice";
 import Gridpricing from "./Components/Gridpricing";
+import { useSelector } from "react-redux";
 
 export default function App() {
+  const { user } = useSelector((state) => ({ ...state }));
+  console.log(user);
   return (
     <div>
       <Routes>

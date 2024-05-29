@@ -26,8 +26,8 @@ export default function Loginform() {
             <p className="text-center text-lg font-medium">
               Sign in to your account
             </p>
-            <AuthInput name="email" type="text" placeholder="Email Address" />
-            <AuthInput name="password" type="password" placeholder="Password" />
+            {/* <AuthInput name="email" type="text" placeholder="Email Address" />
+            <AuthInput name="password" type="password" placeholder="Password" /> */}
 
             <button
               type="submit"
