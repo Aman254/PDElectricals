@@ -2,7 +2,7 @@ const Service = require("../models/serviceModel");
 
 exports.getAllServices = async (req, res, next) => {
   try {
-    const services = await Service.find();
+    const services = await Service.find(req.query);
     res.status(200).json({
       status: "success",
       requestedAt: res.requestTime,
@@ -17,6 +17,7 @@ exports.getAllServices = async (req, res, next) => {
 exports.createService = async (req, res, next) => {
   try {
     const newService = await Service.create(req.body);
+
     res.status(201).json({
       status: "Sucess",
       data: {

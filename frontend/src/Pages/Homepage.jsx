@@ -7,6 +7,7 @@ import chimneyRepair from "../Assets/Images/chimney-repair.jpeg";
 import gyeserRepair from "../Assets/Images/gyeser-repair.jpeg";
 import acService from "../Assets/Images/ac-service.jpeg";
 import Company from "../Components/PageComponents/Company.jsx";
+
 export default function Homepage() {
   return (
     <div>

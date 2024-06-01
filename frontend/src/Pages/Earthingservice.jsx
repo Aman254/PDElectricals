@@ -1,5 +1,11 @@
 import React from "react";
 import Gridpricing from "../Components/Gridpricing";
+import image1 from "../Assets/Images/earthing.jpeg";
+import image2 from "../Assets/Images/earthing2.jpeg";
+import image3 from "../Assets/Images/earthingchemical1.jpeg";
+import image4 from "../Assets/Images/lightarrestor.jpeg";
+import image5 from "../Assets/Images/earthingStrip.jpeg";
+import image6 from "../Assets/Images/boring.jpeg";
 
 export default function Earthingservice() {
   return (
@@ -19,10 +25,54 @@ export default function Earthingservice() {
           </div>
           {/* /Heading */}
           <div className="grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-16">
-            <Gridpricing />
-            <Gridpricing />
-            <Gridpricing />
-            <Gridpricing />
+            <Gridpricing
+              title="GI 50mm Earthing"
+              price="3000/-"
+              description="50mm GI Earthing electrode of 10ft height and Included with complete Installation with Chemical."
+              image={image2}
+            />
+            <Gridpricing
+              title="GI 80mm Earthing"
+              price="4000/-"
+              description="80mm GI Earthing electrode of 10ft height and Included with complete Installation with Chemical."
+              image={image2}
+            />
+            <Gridpricing
+              title="Copper 50mm Earthing"
+              price="7500/-"
+              description="50mm Copper Earthing electrode of 10ft height and Included with complete Installation with Chemical."
+              image={image1}
+            />
+            <Gridpricing
+              title="Copper 80mm Earthing"
+              price="8500/-"
+              description="80mm Copper Earthing electrode of 10ft height and Included with complete Installation with Chemical."
+              image={image1}
+            />
+            <Gridpricing
+              title="Chemical Only"
+              price="500/-"
+              description="Chemical only for Earthing Eletrodes of all types."
+              image={image3}
+            />
+            <Gridpricing
+              title="Light Arrestor"
+              price="1500/-"
+              description="Light Arrestor for Building and Complexes and School etc.."
+              image={image4}
+            />
+            <Gridpricing
+              title="Earthing Strip"
+              price="60/- per Kg"
+              description="Earthing Strip also available in Copper for more Enquire now"
+              image={image5}
+            />
+            <Gridpricing
+              title="Earthing Boring only"
+              price="600/- per Bore"
+              description="Earthing Boring only "
+              image={image6}
+            />
           </div>
         </div>
       </section>

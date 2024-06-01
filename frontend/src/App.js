@@ -11,12 +11,12 @@ import Electricservices from "./Pages/Electricservices";
 import Generator from "./Pages/Generatorservice";
 import ACservice from "./Pages/ACservice";
 import Earthingservice from "./Pages/Earthingservice";
-import Gridpricing from "./Components/Gridpricing";
 import { useSelector } from "react-redux";
 
 export default function App() {
   const { user } = useSelector((state) => state.user);
   const access_token = user?.access_token;
+  console.log(access_token);
 
   return (
     <div>

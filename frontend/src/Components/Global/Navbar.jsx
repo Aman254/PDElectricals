@@ -21,7 +21,7 @@ export default function Navbar() {
             <Link to="/contactus" className="mr-5 hover:text-gray-900 ">
               Contact
             </Link>
-            {login ? (
+            {/* {login ? (
               <button>
                 <Link to="/account">
                   <Avatar />
@@ -35,7 +35,7 @@ export default function Navbar() {
               >
                 <Link to="/login">Sign In</Link>
               </button>
-            )}
+            )} */}
           </nav>
         </div>
       </header>

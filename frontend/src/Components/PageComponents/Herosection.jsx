@@ -20,7 +20,7 @@ export default function Herosection() {
             Anytime , Anything , Anywhere in Mathura
           </p>
           <div className="flex flex-wrap justify-center w-full">
-            <SearchInput />
+            {/* <SearchInput /> */}
           </div>
         </div>
       </div>
