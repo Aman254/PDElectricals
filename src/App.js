@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Homepage from "./Pages/Homepage";
 import Login from "./Pages/login";
@@ -28,10 +28,7 @@ export default function App() {
         <Route path="/services/earthing" element={<Earthingservice />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route
-          path="/contactus"
-          element={access_token ? <Contact /> : <Navigate to="/login" />}
-        />
+        <Route path="/contactus" element={<Contact />} />
         <Route path="/account" element={<Account />} />
       </Routes>
     </div>
