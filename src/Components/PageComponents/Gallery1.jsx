@@ -6,7 +6,7 @@ import generator3 from "../../Assets/Images/generator3.jpg";
 import generator4 from "../../Assets/Images/generator4.jpg";
 
 import earthing from "../../Assets/Images/earthing.jpeg";
-import earthing1 from "../../Assets/Images/earthing1.jpeg";
+// import earthing1 from "../../Assets/Images/earthing1.jpeg";
 import earthing2 from "../../Assets/Images/earthing2.jpeg";
 
 import panel1 from "../../Assets/Images/panel3.jpeg";

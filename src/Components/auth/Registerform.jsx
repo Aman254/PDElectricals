@@ -85,7 +85,7 @@ export default function Registerform() {
               className="block w-full rounded-lg bg-violet-600 focus:outline-none 
               hover:bg-violet-400 transition-all px-5 py-3 text-sm font-medium text-white"
             >
-              {status == "loading" ? (
+              {status === "loading" ? (
                 <BeatLoader color="#fff" size={16} />
               ) : (
                 "Sign up"

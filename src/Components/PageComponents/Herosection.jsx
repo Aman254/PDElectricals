@@ -1,11 +1,11 @@
 import React from "react";
-import SearchInput from "./SearchInput";
+// import SearchInput from "./SearchInput";
 import electrician from "../../Assets/Icons/electrician.png";
 import ac from "../../Assets/Icons/ac.png";
 import earth from "../../Assets/Icons/earth.png";
 import generator from "../../Assets/Icons/generator.png";
-import explore from "../../Assets/Icons/explore.png";
-import inverter from "../../Assets/Icons/inverter.png";
+// import explore from "../../Assets/Icons/explore.png";
+// import inverter from "../../Assets/Icons/inverter.png";
 import ServicesIcon from "./ServicesIcon";
 
 export default function Herosection() {

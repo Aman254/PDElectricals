@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Avatar from "./Avatar";
-import { useState } from "react";
+// import Avatar from "./Avatar";
+// import { useState } from "react";
 
 export default function Navbar() {
-  const [login, setLogin] = useState(false);
+  // const [login, setLogin] = useState(false);
   return (
     <div>
       <header className="text-gray-600 body-font">

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import Pricingcard from "../Components/Pricingcard";
 import generator1 from "../Assets/Images/generator4.jpg";
 import generator2 from "../Assets/Images/generator9.webp";
